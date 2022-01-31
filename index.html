@@ -51,51 +51,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="wrapper_header">
-      <div class="drawer_top_hd">
-        <div class="sec_top_hd container-lg">
-          <div class="cont_data">
-            <a href="#">
-              <span class="pe-1"><ion-icon name="call"></ion-icon></span>
-              <span>(993) 352 4257</span>
-            </a>
-            <a href="#">
-              <span class="pe-1"
-                ><ion-icon name="mail-outline"></ion-icon
-              ></span>
-              <span>atencionaclientes@wrregister.com</span>
-            </a>
-          </div>
-          <div class="cont_linkeos">
-            <a href="#">Próximos cursos</a>
-            <a href="#">Web mail</a>
-          </div>
-        </div>
-      </div>
-      <div class="drawer_bottom_hd">
-        <div class="sec_bottom_hd container-lg">
-          <div class="cont_brand">
-            <a href="/">
-              <img
-                src="./imgs/logo-wrregister.png"
-                alt="Logo World Register Certification"
-                title="World Register Certification"
-              />
-            </a>
-          </div>
-          <nav class="cont_navs_menus">
-            <a class="sec_active" href="#">INICIO</a>
-            <a class="" href="#">NOSOTROS</a>
-            <a class="" href="#">SERVICIOS</a>
-            <a class="" href="#">DOCUMENTACIÓN</a>
-            <a class="" href="#">CONTACTO</a>
-          </nav>
-          <div class="cont_btns">
-            <a href="#" class="btn btn_secundary">COTIZAR AHORA</a>
-          </div>
-        </div>
-      </div>
-    </header>
+    <header class="wrapper_header"></header>
 
     <section class="wrapper_home">
       <div class="container-lg drawer_home">
@@ -259,57 +215,7 @@
       </div>
     </section>
 
-    <section class="wrapper_experience">
-      <img class="imgs_dots" src="./imgs/side-dots.png" alt="dots" />
-
-      <div class="drawer_experience">
-        <div class="container-lg">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="box_img_experience">
-                <img
-                  src="./imgs/experience.jpg"
-                  title="Nuestra experiencia"
-                  alt="Nuestra experiencia"
-                />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="box_experience_info">
-                <h6 class="ttl_primary mb-4">Nuestra experiencia</h6>
-                <p class="my_paragraph mb-5">
-                  World Register S.A. de C.V. se constituyó legalmente en marzo
-                  del 2009 con el objetivo de brindar servicios de auditoria y
-                  certificación en estándares internacionales de la calidad,
-                  seguridad y medio ambiente en organizaciones del sector
-                  público y privado en los sectores siguientes:
-                </p>
-                <div class="box_dots_experience">
-                  <h4 class="mb-4">
-                    <span
-                      ><ion-icon name="chevron-forward-circle"></ion-icon
-                    ></span>
-                   <span> Maquinaria y Equipo</span>
-                  </h4>
-                  <h4 class="mb-4">
-                    <span
-                      ><ion-icon name="chevron-forward-circle"></ion-icon
-                    ></span>
-                    <span>Servicios de Ingeniería</span>
-                  </h4>
-                  <h4 class="mb-4">
-                    <span
-                      ><ion-icon name="chevron-forward-circle"></ion-icon
-                    ></span>
-                    <span>Educación</span>
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="wrapper_experience"></section>
 
     <section class="wrapper_info_access">
       <div class="container-lg">
@@ -324,36 +230,23 @@
       </div>
     </section>
 
-    <footer class="wrapper_footer">
-      <div class="foot_top">
-        <div class="container-lg">
-          <div class="row  align-items-center">
-            <div class="col-md-4 foot_brand">
-              <img src="./imgs/logo-wrregister.png" title="World Register" alt="World Register" />
-            </div>
-            <div class="col-md-4 text-center">
-              <a href="#"
-                >Paseo de la Ceiba esq. La Pigua Num.102, Int. 202, Col. 1ro de
-                Mayo, CP 86190. Villahermosa, Tabasco, México.</a
-              >
-            </div>
-            <div class="col-md-4 foot_data">
-              <a href="#">atencionaclientes@wrregister.com </a> <br>
-              <a href=""> (993) 3524257</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="foot_low">
-        Copyright 2009 - 2021 - WORLD REGISTER S.A de C.V
-      </div>
-    </footer>
+    <footer class="wrapper_footer"></footer>
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
     <script src="./js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        loadComponents();
+      });
+    </script>
   </body>
 </html>
