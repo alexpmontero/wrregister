@@ -8,7 +8,6 @@ $(function(){
         var f = $(this);
         var formData = new FormData(document.getElementById("formulario_contacto"));
         formData.append("dato", "valor");
-        console.log(formData)
       //   for (var value of formData.values()) {
       //     console.log(value); 
       //  }
@@ -33,7 +32,6 @@ $(function(){
         .done(function (res) {                  
 
           if(res.a == "1"){
-            console.log("success...")
             // Mostramos el mensaje 'Tu Mensaje ha sido enviado Correctamente !' 
             $(".msg").html(res.b);                   
             $("#formulario_contacto").trigger("reset");    

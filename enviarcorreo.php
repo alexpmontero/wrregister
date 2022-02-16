@@ -181,19 +181,19 @@ $correo = "atencionaclientes@wrregister.com";
 // Asunto 
 $e_asunto= 'Mensaje de Contacto';
 
-// Aca subo la imagen a mi servidor (Sera enviada como adjunto) 
 //$archivo = 'https://tudominio.com/uploads/'.$nuevonombreimagen;
 $archivo = 'uploads/'.$nuevonombreimagen;
 
 // Preparamos el encabezado del correo 
-$e_bodya = "<p><b>Nombres y Apellidos:</b> $nya" . PHP_EOL . PHP_EOL . "</p>";
-$e_bodyd = "<p><b>Organización:</b> $organizacion" . PHP_EOL . PHP_EOL . "";
+$e_bodya = "<p><b>Nombre:</b> $nya" . PHP_EOL . PHP_EOL . "</p>";
+$e_bodyg = "<p><b>Apellidos:</b> $apellidos" . PHP_EOL . PHP_EOL . "</p>";
+$e_bodyd = "<p><b>Organización:</b> $organizacion" . PHP_EOL . PHP_EOL . "</p>";
 $e_bodye = "<p><b>Teléfono:</b> $telefono" . PHP_EOL . PHP_EOL . "</p>";
 $e_bodyf = "<p><b>Asunto:</b> $asunto" . PHP_EOL . PHP_EOL . "</p>";
 $e_reply = "<p><b>Email:</b> $email" . PHP_EOL . PHP_EOL . "</p>";
 $e_bodyc = "<p><b>Mensaje:</b> $mensaje" . PHP_EOL . PHP_EOL . "</p>";
 
-$msg = wordwrap( $e_bodya . $e_bodyd . $e_bodye . $e_bodyf . $e_bodyc . $e_reply, 80 );
+$msg = wordwrap( $e_bodya . $e_bodyg . $e_bodyd . $e_bodye . $e_bodyf . $e_bodyc . $e_reply, 80 );
 
 // Creamos el encabezado del correo 
 $headers = "From: ".$nya." <".$email.">" . PHP_EOL;
