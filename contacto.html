@@ -134,7 +134,7 @@
               <h3 class="ttl_primary text-center">
                 Permítenos conocer tus necesidades
               </h3>
-              <form class="box_form box_shaddow">
+              <form class="box_form box_shaddow" name="formulario_contacto" id="formulario_contacto" enctype="multipart/form-data">
                 <div class="row">
                   <div class="mb-4 col-md-6">
                     <label for="name" class="form-label">Nombre(s)</label>
@@ -142,16 +142,18 @@
                       type="text"
                       class="form-control"
                       id="name"
-                      aria-describedby="emailHelp"
+                      name="name"
+                      aria-describedby="nameHelp"
                     />
                   </div>
                   <div class="mb-4 col-md-6">
-                    <label for="lastaname" class="form-label">Apellidos</label>
+                    <label for="apellidos" class="form-label">Apellidos</label>
                     <input
                       type="text"
                       class="form-control"
-                      id="lastaname"
-                      aria-describedby="emailHelp"
+                      id="apellidos"
+                      name="apellidos"
+                      aria-describedby="apellidoslHelp"
                     />
                   </div>
                   <div class="mb-4 col-md-6">
@@ -160,7 +162,8 @@
                       type="text"
                       class="form-control"
                       id="org"
-                      aria-describedby="emailHelp"
+                      name="org"
+                      aria-describedby="orglHelp"
                     />
                   </div>
                   <div class="mb-4 col-md-6">
@@ -169,6 +172,7 @@
                       type="text"
                       class="form-control"
                       id="telefono"
+                      name="telefono"
                       aria-describedby="telefono"
                     />
                   </div>
@@ -180,6 +184,7 @@
                       type="email"
                       class="form-control"
                       id="email"
+                      name="email"
                       aria-describedby="emailHelp"
                     />
                   </div>
@@ -189,7 +194,7 @@
                       <option value="">Seleccione</option>
                       <option value="cotizar">Cotizar un servicio</option>
                       <option value="dudas">Dudas o sugerencias</option>
-                      <option value="dudas">Postulación para auditor/experto</option>
+                      <option value="postulacion">Postulación para auditor/experto</option>
                     </select>
                   </div>
 
@@ -199,7 +204,8 @@
                     </label>
                     <textarea
                       class="form-control"
-                      id="exampleFormControlTextarea1"
+                      id="mensaje"
+                      name="mensaje"
                       rows="2"
                     ></textarea>
                   </div>
@@ -218,8 +224,10 @@
                       >
                     </div>
                   </div>
+                  <!-- Mensajes de Validación -->
+			            <div class="msg mt-3 mb-3"></div>
                   <div class="col-md-12 text-center">
-                    <button class="btn btn_secundary">Enviar</button>
+                    <button type="submit" class="btn btn_secundary" id="btnenviar" name="btnenviar">Enviar</button>
                   </div>
                 </div>
               </form>
@@ -243,6 +251,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/app.js"></script>
     <script src="./js/main.js"></script>
     <script>
       $(document).ready(function () {
