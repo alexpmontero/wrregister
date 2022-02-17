@@ -281,7 +281,7 @@ img {
 }
 
 .wrapper_data {
-  margin-top: -40px;
+  margin-top: -45px;
   margin-bottom: 90px;
   position: relative;
   z-index: 1;
@@ -561,7 +561,7 @@ img {
   display: none;
 }
 .wrapper_certif .sec_info_certif.other .item_certif .my_paragraph {
-  justify-content: left;
+  justify-content: center;
 }
 .wrapper_certif .sec_info_certif .item_certif {
   width: 100%;
@@ -783,6 +783,14 @@ img {
   max-width: 500px;
   padding: 1.5rem;
   border-radius: 1rem;
+}
+.wrapper_contact .sec_info_form .close {
+  border: 0;
+  margin-right: 0.5rem;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background: rgba(12, 12, 12, 0.1);
 }
 
 .verications .sec_info_form .box_form {

@@ -177,7 +177,7 @@ img {
             border-bottom: 5px solid var(--secundry_color);
           }
         }
-        .maxw{
+        .maxw {
           max-width: 110px;
         }
       }
@@ -300,7 +300,7 @@ img {
 }
 
 .wrapper_data {
-  margin-top: -40px;
+  margin-top: -45px;
   margin-bottom: 90px;
   position: relative;
   z-index: 1;
@@ -589,14 +589,14 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    &.other{
+    &.other {
       justify-content: center;
-      margin-bottom:6rem;
-      .item_certif{
+      margin-bottom: 6rem;
+      .item_certif {
         &:first-child::before {
           display: none;
         }
-        .my_paragraph{
+        .my_paragraph {
           justify-content: center;
         }
       }
@@ -737,7 +737,7 @@ img {
     margin-bottom: 6rem;
     .box_item_links {
       width: 25%;
-      padding: 0 .5rem;
+      padding: 0 0.5rem;
       margin-bottom: 1.5rem;
       text-align: center;
       .item_links {
@@ -754,8 +754,8 @@ img {
         }
         h4 {
           line-height: 1.1;
-        min-height: 75px;
-        margin-top: 1rem;
+          min-height: 75px;
+          margin-top: 1rem;
           font-size: 1.35rem;
         }
         .btn_border {
@@ -774,7 +774,7 @@ img {
           img {
             filter: brightness(0) invert(1);
           }
-          .btn_border{
+          .btn_border {
             background: #ffffff;
           }
         }
@@ -826,7 +826,7 @@ img {
         iframe {
           max-height: 250px;
           width: 100%;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
         }
       }
     }
@@ -839,21 +839,29 @@ img {
       padding: 1.5rem;
       border-radius: 1rem;
     }
+    .close {
+      border: 0;
+      margin-right: 0.5rem;
+      box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.1);
+      border-radius: 0.25rem;
+      cursor: pointer;
+      background: rgb(12, 12, 12, 0.1);
+    }
   }
 }
 
-.verications{
- .sec_info_form .box_form {
+.verications {
+  .sec_info_form .box_form {
     background: #ffffff;
     margin: 0 auto;
     max-width: 800px;
     padding: 1.5rem;
     border-radius: 1rem;
-}
-.ttl_primary{
-  min-height: 100%;
-  margin-bottom: 2rem;
-}
+  }
+  .ttl_primary {
+    min-height: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -861,15 +869,15 @@ img {
     .sec_links {
       .box_item_links {
         width: 33.3%;
-        .item_links{
-          padding: 1.25rem .35rem;
+        .item_links {
+          padding: 1.25rem 0.35rem;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 910px){
+@media screen and (max-width: 910px) {
   .wrapper_header .drawer_bottom_hd {
     .sec_bottom_hd {
       position: relative;
@@ -901,7 +909,7 @@ img {
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
           }
         }
-        .maxw{
+        .maxw {
           max-width: 100%;
         }
         &.show_menu {
@@ -934,7 +942,6 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-
   .wrapper_data {
     margin-bottom: 45px;
     .drawer_data {
@@ -1019,7 +1026,7 @@ img {
     .sec_interest {
       padding: 1.5rem;
       margin-top: 0;
-      .ttl_primary{
+      .ttl_primary {
         margin-bottom: 1.5rem !important;
         font-size: 35px;
       }
@@ -1027,26 +1034,25 @@ img {
         flex-direction: column;
         text-align: center;
         padding-bottom: 0;
-        .item_data{
+        .item_data {
           margin-bottom: 1.5rem;
-          .ttls_minimum{
-            margin-bottom: .5rem !important;
+          .ttls_minimum {
+            margin-bottom: 0.5rem !important;
           }
-          a{
+          a {
             word-break: break-all;
           }
         }
       }
     }
   }
-  .wrapper_contact{
-    .ttl_primary
-    {
+  .wrapper_contact {
+    .ttl_primary {
       min-height: 100%;
       margin-bottom: 2rem;
     }
-    .row_contact{
-      .colfirst{
+    .row_contact {
+      .colfirst {
         order: -1;
       }
     }
@@ -1078,9 +1084,8 @@ img {
   .sec_head_page_info {
     .ttl_home {
       font-size: 65px;
-      &.wbreak{
-      word-break: break-all;
-
+      &.wbreak {
+        word-break: break-all;
       }
     }
   }
@@ -1165,7 +1170,7 @@ img {
           min-height: 100%;
           h4 {
             min-height: 100%;
-        }
+          }
         }
       }
     }
@@ -1212,8 +1217,8 @@ img {
   }
   .wrapper_docu .box_steps {
     text-align: center;
-    padding: 0 .25rem;
-}
+    padding: 0 0.25rem;
+  }
 }
 
 @media screen and (max-width: 380px) {
