@@ -87,7 +87,7 @@
               <p class="my_paragraph text-center mb-5">World Register pone a su disposición este medio para solicitar
                 información acerca del estatus o autenticidad de cualquier certificado
                 emitido por nuestro organismo.</p>
-              <form class="box_form box_shaddow">
+                <form class="box_form box_shaddow" name="formulario_contacto" id="formulario_contacto" enctype="multipart/form-data">
                 <div class="row">
                   <div class="mb-4 col-md-12">
                     <label for="name" class="form-label"><b>Datos del solicitante</b></label>
@@ -98,15 +98,17 @@
                       type="text"
                       class="form-control"
                       id="name"
+                      name="name"
                       aria-describedby="emailHelp"
                     />
                   </div>
                   <div class="mb-4 col-md-6">
                     <label for="org" class="form-label">Correo electrónico</label>
                     <input
-                      type="text"
+                      type="email"
                       class="form-control"
-                      id="org"
+                      id="email"
+                      name="email"
                       aria-describedby="emailHelp"
                     />
                   </div>
@@ -115,19 +117,19 @@
                     <input
                       type="text"
                       class="form-control"
+                      name="telefono"
                       id="telefono"
                       aria-describedby="telefono"
                     />
                   </div>
-                
-                  
                   <div class="mb-4 col-md-6">
                     <label for="email" class="form-label"
                       >Organización</label>
                     <input
-                      type="email"
+                      type="text"
                       class="form-control"
-                      id="email"
+                      name="organizacion"
+                      id="organizacion"
                       aria-describedby="emailHelp"
                     />
                   </div>
@@ -139,9 +141,10 @@
                     <label for="email" class="form-label"
                       >Organización certificada</label>
                     <input
-                      type="email"
+                      type="text"
                       class="form-control"
-                      id="email"
+                      id="org_certificada"
+                      name="org_certificada"
                       aria-describedby="emailHelp"
                     />
                   </div>
@@ -149,9 +152,10 @@
                     <label for="email" class="form-label"
                       >No. de certificado</label>
                     <input
-                      type="numero"
+                      type="text"
                       class="form-control"
-                      id="numero"
+                      id="no_certificado"
+                      name="no_certificado"
                       aria-describedby="numero"
                     />
                   </div>
@@ -159,15 +163,16 @@
                     <label for="norma" class="form-label"
                       >Norma(s) certificada(s)</label>
                     <input
-                      type="norma"
+                      type="text"
                       class="form-control"
                       id="norma"
+                      name="norma"
                       aria-describedby="norma"
                     />
                   </div>
                   <div class="mb-4 col-md-12">
                     <label for="formFile" class="form-label">Adjuntar certificado (solo aplica para autenticación):</label>
-                    <input class="form-control" type="file" id="formFile">
+                    <input class="form-control" type="file" id="img" name="img">
                   </div>
                   </div>
                   <div class="mb-4 col-md-12">
@@ -176,7 +181,8 @@
                     </label>
                     <textarea
                       class="form-control"
-                      id="exampleFormControlTextarea1"
+                      id="mensaje"
+                      name="mensaje"
                       rows="2"
                     ></textarea>
                   </div>
@@ -196,8 +202,10 @@
                       >
                     </div>
                   </div>
+                  <!-- Mensajes de Validación -->
+			            <div class="msg mt-3 mb-3"></div>
                   <div class="col-md-12 text-center">
-                    <button class="btn btn_secundary">Enviar</button>
+                    <button type="submit" class="btn btn_secundary" id="btnenviar" name="btnenviar">Enviar</button>
                   </div>
                 </div>
               </form>
@@ -221,6 +229,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/appp.js"></script>
     <script src="./js/main.js"></script>
     <script>
       $(document).ready(function () {
