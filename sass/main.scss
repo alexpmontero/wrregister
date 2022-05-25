@@ -227,6 +227,36 @@ img {
   }
 }
 
+.header__in_section {
+  padding: 3rem 1rem 6rem !important;
+}
+.wrapper__in_section {
+  margin-top: -3.5rem;
+  padding: 0 1rem;
+  form {
+    background: #ffffff;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  .div_btns{
+    .btn {
+      font-size: 13px !important;
+      display: block;
+      width: 100%;
+    }
+  }
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
 .wrapper_footer {
   color: #ffffff;
   font-size: 0.9rem;

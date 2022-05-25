@@ -28,7 +28,7 @@ if(!isset($_SESSION['user_id'])){
               <div class="col-md-6">
                 <div class="sec_head_page_info">
                   <h6 class="ttls_minimum in_head mb-4"><span>World Register</span></h6>
-                  <h3 class="ttl_home">Otros servicios</h3>
+                  <h3 class="ttl_home">Otros servicios - LOGIN</h3>
                   <p class="my_paragraph mt-3">
                     La Certificación es la forma mas confiable de demostrar
                     excelencia y conducir la mejora continua.
