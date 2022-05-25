@@ -224,6 +224,18 @@ img {
   margin-top: -3.5rem;
   padding: 0 1rem;
 }
+.wrapper__in_section .textright_close {
+  text-align: right;
+}
+.wrapper__in_section .textright_close .closebtn {
+  text-decoration: none;
+  color: #18236c;
+  font-weight: 600;
+  cursor: pointer;
+}
+.wrapper__in_section .textright_close .closebtn:hover {
+  text-decoration: underline;
+}
 .wrapper__in_section form {
   background: #ffffff;
   margin: 0 auto;

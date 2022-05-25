@@ -61,7 +61,7 @@ if (isset($_POST['login'])) {
               <h6 class="ttls_minimum in_head mb-4"><span>World Register</span></h6>
               <h3 class="ttl_home">Iniciar sesión</h3>
               <p class="my_paragraph mt-3">
-                Bienvenido tu cuenta WRegister
+                Bienvenido a World Register
               </p>
             </div>
         </div>

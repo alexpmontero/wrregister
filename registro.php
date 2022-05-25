@@ -29,7 +29,7 @@
               <h6 class="ttls_minimum in_head mb-4"><span>World Register</span></h6>
               <h3 class="ttl_home">Registro</h3>
               <p class="my_paragraph mt-3">
-                Ingresa tus datos para crear tu cuenta en WRegister
+                Ingresa tus datos para crear tu cuenta en World Register
               </p>
             </div>
         </div>
