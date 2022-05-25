@@ -33,6 +33,9 @@ if(!isset($_SESSION['user_id'])){
       <body class="">
       <section class="wrapper_head_page header__in_section">
         <div class="container" style='position: relative; z-index:1'>
+          <div class='textright_close'>
+            <a class='closebtn' href="logout">Cerrar sesión</a>
+          </div>
           <div class="row">
             <div class="col-md-12">
               <div class="sec_head_page_info">

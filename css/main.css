@@ -219,22 +219,23 @@ img {
 .header__in_section {
   padding: 3rem 1rem 6rem !important;
 }
-
-.wrapper__in_section {
-  margin-top: -3.5rem;
-  padding: 0 1rem;
-}
-.wrapper__in_section .textright_close {
+.header__in_section .textright_close {
   text-align: right;
+  margin-bottom: 2rem;
 }
-.wrapper__in_section .textright_close .closebtn {
+.header__in_section .textright_close .closebtn {
   text-decoration: none;
   color: #18236c;
   font-weight: 600;
   cursor: pointer;
 }
-.wrapper__in_section .textright_close .closebtn:hover {
+.header__in_section .textright_close .closebtn:hover {
   text-decoration: underline;
+}
+
+.wrapper__in_section {
+  margin-top: -3.5rem;
+  padding: 0 1rem;
 }
 .wrapper__in_section form {
   background: #ffffff;

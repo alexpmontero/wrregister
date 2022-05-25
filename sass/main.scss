@@ -229,12 +229,9 @@ img {
 
 .header__in_section {
   padding: 3rem 1rem 6rem !important;
-}
-.wrapper__in_section {
-  margin-top: -3.5rem;
-  padding: 0 1rem;
   .textright_close{
     text-align: right;
+    margin-bottom: 2rem;
     .closebtn{
       text-decoration: none;
       color: #18236c;
@@ -245,6 +242,11 @@ img {
       }
     }
   }
+}
+.wrapper__in_section {
+  margin-top: -3.5rem;
+  padding: 0 1rem;
+
   form {
     background: #ffffff;
     margin: 0 auto;
