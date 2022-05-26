@@ -62,7 +62,7 @@ if(!isset($_SESSION['user_id'])){
             onsubmit="return false"
           >
             <div class="row">
-              <div class="mb-4 col-sm-6">
+              <div class="mb-4 col-sm-6 mb-2">
                 <div class="form-group">
                     <label class="control-label">Información: </label>
                     <input class="form-control" id="content" type="text" required="required">
@@ -81,7 +81,7 @@ if(!isset($_SESSION['user_id'])){
                     <input type="number" min="1" max="10" step="1" class="form-control" id="size" value="5">
                 </div>
               </div>
-              <div class="mb-4 col-sm-6">
+              <div class="mb-4 col-sm-6 text-center mb-2">
                 <div class="form-group">
                     <label class="control-label"></label>
                     <input type="submit" name="submit" id="submit" class="btn btn-success" value="Generar código QR">
