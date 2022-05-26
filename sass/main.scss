@@ -231,11 +231,11 @@ img {
   padding: 3rem 1rem 6rem !important;
   .textright_close{
     text-align: right;
-    margin-bottom: 2rem;
+    margin-bottom: .75rem;
     .closebtn{
       text-decoration: none;
-      color: #18236c;
-      font-weight: 600;
+      font-weight: 500;
+      font-size: 1.25rem;
       cursor: pointer;
       &:hover{
         text-decoration: underline;

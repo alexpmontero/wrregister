@@ -221,12 +221,12 @@ img {
 }
 .header__in_section .textright_close {
   text-align: right;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
 }
 .header__in_section .textright_close .closebtn {
   text-decoration: none;
-  color: #18236c;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.25rem;
   cursor: pointer;
 }
 .header__in_section .textright_close .closebtn:hover {

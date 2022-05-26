@@ -50,54 +50,54 @@ if(!isset($_SESSION['user_id'])){
         </div>
       </section>  
 
-      <section class='wrapper__in_section'>
+      <section class='wrapper_contact verications'>
         <div class='textright_close'>
-          <a class='closebtn' href="logout">Cerrar sesión</a>
+          <a class='closebtn' href="logout"><ion-icon name="log-out-outline"></ion-icon> CERRAR SESIÓN</a>
         </div>
-        <form
-          class='box_form box_shaddow'
-          method="post" 
-          id="codeForm" 
-          onsubmit="return false"
-        >
-          <div class="row">
-            <div class="mb-4 col-md-6">
-              <div class="form-group">
-                  <label class="control-label">Información: </label>
-                  <input class="form-control" id="content" type="text" required="required">
+        <div class="sec_info_form">
+          <form
+            class='box_form box_shaddow'
+            method="post" 
+            id="codeForm" 
+            onsubmit="return false"
+          >
+            <div class="row">
+              <div class="mb-4 col-sm-6">
+                <div class="form-group">
+                    <label class="control-label">Información: </label>
+                    <input class="form-control" id="content" type="text" required="required">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Nivel del código (ECC): </label>
+                    <select class="form-control" id="ecc">
+                        <option value="H">H - Mejor</option>
+                        <option value="M">M</option>
+                        <option value="Q">Q</option>
+                        <option value="L">L - Peor</option>                         
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Tamaño: </label>
+                    <input type="number" min="1" max="10" step="1" class="form-control" id="size" value="5">
+                </div>
               </div>
-              <div class="form-group">
-                  <label class="control-label">Nivel del código (ECC): </label>
-                  <select class="form-control" id="ecc">
-                      <option value="H">H - Mejor</option>
-                      <option value="M">M</option>
-                      <option value="Q">Q</option>
-                      <option value="L">L - Peor</option>                         
-                  </select>
+              <div class="mb-4 col-sm-6">
+                <div class="form-group">
+                    <label class="control-label"></label>
+                    <input type="submit" name="submit" id="submit" class="btn btn-success" value="Generar código QR">
+                </div>
+                <div>
+                  <div class="showQRCode"></div>
+                </div>
               </div>
-              <div class="form-group">
-                  <label class="control-label">Tamaño: </label>
-                  <input type="number" min="1" max="10" step="1" class="form-control" id="size" value="5">
+              <div class="col-md-12 text-center">
+                <div class="insert-post-ads1" style="margin-top:20px;"></div>
               </div>
             </div>
-            <div class="mb-4 col-md-6">
-              <div class="form-group">
-                  <label class="control-label"></label>
-                  <input type="submit" name="submit" id="submit" class="btn btn-success" value="Generar código QR">
-              </div>
-              <div>
-                <div class="showQRCode"></div>
-              </div>
-            </div>
-            <div class="col-md-12 text-center">
-              <div class="insert-post-ads1" style="margin-top:20px;"></div>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
+
       </section>
-
-
-
       </body>
   </html>
   <?php  
