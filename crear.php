@@ -5,6 +5,24 @@ if(!isset($_SESSION['user_id'])){
     header('Location: login');
     exit;
 } else {
+  header("Content-type: text/html; charset=utf8");
+  include 'funciones.php';
+
+  $error = false;
+  $config = include 'config.php';
+
+  try {
+      $consultaSQL = "SELECT * FROM empresa_certificada";
+
+      $sentencia = $connection->prepare($consultaSQL);
+      $sentencia->execute();
+
+      $alumnos = $sentencia->fetchAll();
+
+  } catch(PDOException $error) {
+      $error= $error->getMessage();
+  }
+
   ?>
 
   <html>
@@ -64,11 +82,24 @@ if(!isset($_SESSION['user_id'])){
             <div class="row">
               <div class="mb-4 col-sm-6 mb-2">
                 <div class="form-group">
-                    <label class="control-label">Información: </label>
-                    <input class="form-control" id="content" type="text" required="required">
+                  <label class="control-label">Empresa certificada: </label>
+                  <select name="asunto" id="content" class="form-control">
+                    <option value="0">Seleccione:</option>
+                    <!-- <label class="control-label">Información: </label>
+                    <input class="form-control" id="content" type="text" required="required"> -->
+
+                    <?php
+                      if ($alumnos && $sentencia->rowCount() > 0) {
+                        foreach ($alumnos as $fila) {
+                          echo '<option value="'.$fila["identificador"].'">'.utf8_encode($fila["nombre"]).'</option>';
+                        }
+                      }
+                      ?>
+                    </select>
+
                 </div>
                 <div class="form-group">
-                    <label class="control-label">Nivel del código (ECC): </label>
+                    <label class="control-label">Calidad imagen QR: </label>
                     <select class="form-control" id="ecc">
                         <option value="H">H - Mejor</option>
                         <option value="M">M</option>
@@ -78,7 +109,7 @@ if(!isset($_SESSION['user_id'])){
                 </div>
                 <div class="form-group">
                     <label class="control-label">Tamaño: </label>
-                    <input type="number" min="1" max="10" step="1" class="form-control" id="size" value="5">
+                    <input type="number" min="6" max="10" step="6" class="form-control" id="size" value="6">
                 </div>
               </div>
               <div class="mb-4 col-sm-6 text-center mb-2">
@@ -96,7 +127,11 @@ if(!isset($_SESSION['user_id'])){
             </div>
           </form>
         </div>
-
+        <div class="col-md-12 text-center">
+            <a href="../../admin">
+              <button class="btn btn-primary">INICIO</button>
+            </a>
+          </div>
       </section>
       </body>
   </html>

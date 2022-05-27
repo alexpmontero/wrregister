@@ -57,13 +57,17 @@ $(function(){
 
 $(document).ready(function() {
     $("#codeForm").submit(function(){
-        $.ajax({
-            url:'crear-qr.php',
-            type:'POST',
-            data: {formData:$("#content").val(), ecc:$("#ecc").val(), size:$("#size").val()},
-            success: function(response) {
-                $(".showQRCode").html(response);  
-            },
-         });
+      if ($("#content").val() == 0){
+        $(".showQRCode").html("Escoja una empresa para generar el código QR");  
+        return false;
+      }
+      $.ajax({
+          url:'crear-qr.php',
+          type:'POST',
+          data: {formData:$("#content").val() + "|" + $("#content option:selected").text(), ecc:$("#ecc").val(), size:$("#size").val()},
+          success: function(response) {
+              $(".showQRCode").html(response);  
+          },
+        });
     });
 });

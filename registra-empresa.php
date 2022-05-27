@@ -36,7 +36,7 @@ if(!isset($_SESSION['user_id'])){
               <h6 class="ttls_minimum in_head mb-4"><span>World Register</span></h6>
               <h3 class="ttl_home">Registro</h3>
               <p class="my_paragraph mt-3">
-                Ingresa tus datos para crear tu cuenta en World Register
+                Ingresa los datos para crear Empresa
               </p>
             </div>
         </div>
@@ -44,28 +44,37 @@ if(!isset($_SESSION['user_id'])){
     </div>
 </section>  
 <section class='wrapper__in_section'>
-  <form method="post" action="crear-registro" name="signup-form" class='box_form box_shaddow'>
+  <form method="post" action="crear-registro-empresa" name="signup-form" class='box_form box_shaddow'>
     <div class="row">
       <div class=" col-md-12 mb-2">
-        <label for="name" class="form-label">Nombre completo</label>
-        <input  class="form-control" type="text" name="username" pattern="[a-zA-Z0-9]+" required />
+        <label for="name" class="form-label">Nombre Cliente</label>
+        <input  class="form-control" type="text" name="nombre" required />
       </div>
-     
       <div class=" col-md-12 mb-2">
-        <label for="name" class="form-label">Correo electrónico</label>
-        <input class="form-control" type="email" name="email" required />
+        <label for="name" class="form-label">Número de certificado</label>
+        <input class="form-control" type="text" name="nocertificado" required />
       </div>
-     
-
       <div class=" col-md-12 mb-2">
-        <label for="name" class="form-label">Contraseña</label>
-        <input class="form-control" type="password" name="password" required />
+        <label for="name" class="form-label">Norma de certificado</label>
+        <input class="form-control" type="text" name="normacertificado" required />
+      </div>
+      <div class=" col-md-12 mb-2">
+        <!-- <label for="name" class="form-label">Estatus</label>
+        <input class="form-control" type="text" name="estatus" required /> -->
+
+
+        <label for="cars">Estatus:</label>
+                    <select name="estatus" id="estatus" class="form-control">
+                      <option value=0>Seleccione</option>
+                      <option value="vigente">Vigente</option>
+                      <option value="no vigente">No vigente</option>
+                    </select>
+
+
       </div>
      
-
       <div class='div_btns col-md-12'>
       <button class='btn btn_primary mb-1' type="submit" name="register" value="register">Registrar</button>
-      <a href='https://www.wrregister.com/login' class='btn btn_secundary ' name="register" value="register">Iniciar sesión</a>
       </div>
     </div>
   </form>
