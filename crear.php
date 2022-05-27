@@ -57,10 +57,13 @@ if(!isset($_SESSION['user_id'])){
           <div class="row">
             <div class="col-md-12">
               <div class="sec_head_page_info">
-                <h6 class="ttls_minimum in_head mb-4"><span>World Register</span></h6>
-                <h1 class=""><?php  echo $_SESSION['user_name'];?></h1>
+                <h6 class="ttls_minimum in_head mb-4"><span></span></h6>
+                <h1 class="">Hola <?php  echo $_SESSION['user_name'];?></h1>
                 <p class="my_paragraph mt-3">
-                  Bienvenido a World Register
+                <div class="col-md-12">
+                <a href="registra-empresa" class="btn btn-primary mt-4">Registrar empresa </a>
+                <a href="admin" class="btn btn-primary mt-4">Admin</a>
+              </div>
                 </p>
               </div>
             </div>
@@ -69,9 +72,7 @@ if(!isset($_SESSION['user_id'])){
       </section>  
 
       <section class='wrapper_contact verications'>
-        <div class='textright_close'>
-          <a class='closebtn' href="logout"><ion-icon name="log-out-outline"></ion-icon> CERRAR SESIÓN</a>
-        </div>
+        
         <div class="sec_info_form">
           <form
             class='box_form box_shaddow'
@@ -127,11 +128,7 @@ if(!isset($_SESSION['user_id'])){
             </div>
           </form>
         </div>
-        <div class="col-md-12 text-center">
-            <a href="../../admin">
-              <button class="btn btn-primary">INICIO</button>
-            </a>
-          </div>
+        
       </section>
       </body>
   </html>

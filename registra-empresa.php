@@ -30,13 +30,20 @@ if(!isset($_SESSION['user_id'])){
 
 <section class="wrapper_head_page header__in_section">
     <div class="container" style='position: relative; z-index:1'>
+    <div class='textright_close'>
+            <a class='closebtn' href="logout">Cerrar sesión</a>
+          </div>
         <div class="row">
         <div class="col-md-12">
             <div class="sec_head_page_info">
               <h6 class="ttls_minimum in_head mb-4"><span>World Register</span></h6>
-              <h3 class="ttl_home">Registro</h3>
+              <h2 class="mt-3">Ingresa los datos de la empresa certificada</h2>
               <p class="my_paragraph mt-3">
-                Ingresa los datos para crear Empresa
+              <div class="col-md-12">
+                <a href="admin" class="btn btn-primary mt-4">Admin</a>
+                <a href="crear" class="btn btn-primary mt-4">Crear </a>
+              </div>
+                
               </p>
             </div>
         </div>
