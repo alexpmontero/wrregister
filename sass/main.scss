@@ -19,6 +19,13 @@ img {
   max-width: 100%;
 }
 
+.error{
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: crimson;
+}
+
 .btn {
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
@@ -229,15 +236,15 @@ img {
 
 .header__in_section {
   padding: 3rem 1rem 6rem !important;
-  .textright_close{
+  .textright_close {
     text-align: right;
-    margin-bottom: .75rem;
-    .closebtn{
+    margin-bottom: 0.75rem;
+    .closebtn {
       text-decoration: none;
       font-weight: 500;
       font-size: 1.25rem;
       cursor: pointer;
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
@@ -256,7 +263,7 @@ img {
     position: relative;
     z-index: 1;
   }
-  .div_btns{
+  .div_btns {
     .btn {
       font-size: 13px !important;
       display: block;

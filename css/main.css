@@ -19,6 +19,13 @@ img {
   max-width: 100%;
 }
 
+.error {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: crimson;
+}
+
 .btn {
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
@@ -721,7 +728,6 @@ img {
 }
 
 .trans {
-  -webkit-transition: 0.5s cubic-bezier(0.2, 0.61, 0.41, 0.95);
   transition: 0.5s cubic-bezier(0.2, 0.61, 0.41, 0.95);
 }
 
@@ -1145,5 +1151,3 @@ img {
     width: 95%;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
