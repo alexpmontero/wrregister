@@ -83,37 +83,11 @@ if (isset($_POST['login'])) {
 
       <div class='div_btns col-md-12'>
       <button class='btn btn_secundary ' type="submit" name="login" value="login">Iniciar sesión</button>
+      <p></p>
+      <p><a href="recupera" class='btn btn-warning mt-4'>Olvidé mi contraseña</a></p>
       </div>
     </div>
   </form>
-    <?php
-      include 'config.php';
-      session_start();
-      
-      if (isset($_POST['login'])) {
-      
-          $username = $_POST['username'];
-          $password = $_POST['password'];
-      
-          $query = $connection->prepare("SELECT * FROM usuarios WHERE USERNAME=:username");
-          $query->bindParam("username", $username, PDO::PARAM_STR);
-          $query->execute();
-      
-          $result = $query->fetch(PDO::FETCH_ASSOC);
-      
-          if (!$result) {
-              echo '<p class="error">*Username password combination is wrong!</p>';
-          } else {
-              if (password_verify($password, $result['password'])) {
-                  $_SESSION['user_id'] = $result['usuario_id'];
-                  $_SESSION['user_name'] = $result['username'];
-                  //echo '<p class="success">Congratulations, you are logged in!</p>';
-                  header('Location: admin');
-                  exit;
-              } else {
-                  echo '<p class="error">**Username password combination is wrong!</p>';
-              }
-          }
-      }
-    ?>
+  
+    
 </section>

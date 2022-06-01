@@ -91,6 +91,7 @@ if ($error) {
               <div class="col-md-12">
                 <a href="registra-empresa" class="btn btn-primary mt-4">Registrar empresa </a>
                 <a href="crear" class="btn btn-primary mt-4">Crear </a>
+                <a href="cambiar" class="btn btn-primary mt-4">Cambiar contraseña</a>
               </div>
 
               </p>
