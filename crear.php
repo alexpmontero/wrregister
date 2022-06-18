@@ -92,7 +92,7 @@ if(!isset($_SESSION['user_id'])){
                     <?php
                       if ($alumnos && $sentencia->rowCount() > 0) {
                         foreach ($alumnos as $fila) {
-                          echo '<option value="'.$fila["identificador"].'">'.utf8_encode($fila["nombre"]).'</option>';
+                          echo '<option value="'.$fila["identificador"].'">'.utf8_encode($fila["nombre"]).' - '.$fila["norma_certificado"].'</option>';
                         }
                       }
                       ?>
