@@ -33,10 +33,10 @@ if(!isset($_SESSION['user_id'])){
         <div class="row">
         <div class="col-md-12">
             <div class="sec_head_page_info">
-              <h6 class="ttls_minimum in_head mb-4"><span>World Register</span></h6>
+              <h6 class="ttls_minimum in_head mb-4"><span>Nova Terra</span></h6>
               <h3 class="ttl_home">Registro</h3>
               <p class="my_paragraph mt-3">
-                Ingresa tus datos para crear tu cuenta en World Register
+                Ingresa tus datos para crear tu cuenta en Nova Terra
               </p>
             </div>
         </div>
@@ -65,7 +65,7 @@ if(!isset($_SESSION['user_id'])){
 
       <div class='div_btns col-md-12'>
       <button class='btn btn_primary mb-1' type="submit" name="register" value="register">Registrar</button>
-      <a href='https://www.wrregister.com/login' class='btn btn_secundary ' name="register" value="register">Iniciar sesión</a>
+      <a href='https://www.novaterra.com/login' class='btn btn_secundary ' name="register" value="register">Iniciar sesión</a>
       </div>
     </div>
   </form>

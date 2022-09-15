@@ -5,7 +5,7 @@ if(isset($_POST) && !empty($_POST)) {
     $empresa = explode("|",$_POST['formData'],2);
     
 
-    $url_certificado = "https://www.wrregister.com/certificados/valida/estatus?certifica=".$empresa[0];
+    $url_certificado = "https://www.novaterra.com/certificados/valida/estatus?certifica=".$empresa[0];
     $codesDir = "qrs/";   
     $codeFilee = date('d-m-Y-h-i-s').'.png';
     $codeFile = str_replace(' ', '_', $empresa[1]).'.png';

@@ -173,7 +173,7 @@ else {
 
 //Correo a donde caeran los mensajes del formulario
 //$correo = "santiago.perezm.softtek@gmail.com";
-$correo = "atencionaclientes@wrregister.com";
+$correo = "atencionaclientes@novaterra.com";
 // Asunto 
 $e_asunto= 'Vigencia de Certificado';
 
@@ -181,7 +181,7 @@ if ($_FILES['img']['size'] == 0){
   $archivo = "";
 }
 else {
-  $archivo = 'https://www.wrregister.com/uploads/'.$nuevonombreimagen;
+  $archivo = 'https://www.novaterra.com/uploads/'.$nuevonombreimagen;
 }
 
 // Preparamos el encabezado del correo 

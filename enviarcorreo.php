@@ -177,7 +177,7 @@ else {
 
 //Correo a donde caeran los mensajes del formulario
 // $correo = "santiago.perezm.softtek@gmail.com";
-$correo = "atencionaclientes@wrregister.com";
+$correo = "atencionaclientes@novaterra.com";
 // Asunto 
 $e_asunto= 'Mensaje de Contacto';
 

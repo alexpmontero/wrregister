@@ -46,7 +46,7 @@
           $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
 
           //dirección del remitente 
-          $headers .= "From: Recupera Contraseña <recuperacontrasenia@wrregister.com>\r\n"; 
+          $headers .= "From: Recupera Contraseña <recuperacontrasenia@novaterra.com>\r\n"; 
 
           //dirección de respuesta, si queremos que sea distinta que la del remitente 
           //$headers .= "Reply-To: mariano@desarrolloweb.com\r\n"; 
@@ -87,9 +87,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="sec_head_page_info">
-                      <h6 class="ttls_minimum in_head mb-4"><span>World Register</span></h6>
+                      <h6 class="ttls_minimum in_head mb-4"><span>Nova Terra</span></h6>
                       <h2 class="ttl_home">Recupera tu contraseña</h2>
-                      <p class="my_paragraph mt-3">Bienvenido a World Register</p>
+                      <p class="my_paragraph mt-3">Bienvenido a Nova Terra</p>
                     </div>
                 </div>
             </div>

@@ -24,7 +24,7 @@ try {
 <html lang="es">
   <head>
     <link rel="icon" type="image/png" href="../..imgs/ico.png">
-    <title>Validación de certificado - World Register Certification</title>
+    <title>Validación de certificado - Nova Terra Certificación</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -45,7 +45,7 @@ try {
     <meta name="apple-mobile-web-app-status-bar-style" content="#18236c" />
 
     <meta name="author" content="By Alex P. Montero" />
-    <meta name="application-name" content="Sitio web oficial World Register" />
+    <meta name="application-name" content="Sitio web oficial Nova Terra" />
     <meta
       name="description"
       content="Prestamos servicios de auditoría y certificación de Sistemas de Gestión de la Calidad, Ambiental y de la Seguridad y Salud en el Trabajo"
@@ -53,9 +53,9 @@ try {
 
     <meta property="og:locale" content="es_ES" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="World Register" />
-    <meta property="og:url" content="http://www.wrregister.com/" />
-    <meta property="og:site_name" content="World Register" />
+    <meta property="og:title" content="Nova Terra" />
+    <meta property="og:url" content="http://www.novaterra.com/" />
+    <meta property="og:site_name" content="Nova Terra" />
     <meta property="og:image" itemprop="image" content="../..imgs/bg_seo.jpg" />
     <meta
       property="og:description"
@@ -86,7 +86,7 @@ try {
         <div class="row">
           <div class="col-md-6">
             <div class="sec_head_page_info">
-              <h6 class="ttls_minimum in_head mb-4"><span>World Register</span></h6>
+              <h6 class="ttls_minimum in_head mb-4"><span>Nova Terra</span></h6>
               <h3 class="ttl_home">Validación de certificado</h3>
               <p class="my_paragraph mt-3">
                 La Certificación es la forma mas confiable de demostrar

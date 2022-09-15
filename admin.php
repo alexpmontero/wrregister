@@ -85,7 +85,7 @@ if ($error) {
         <div class="row">
         <div class="col-md-12">
             <div class="sec_head_page_info">
-              <h6 class="ttls_minimum in_head mb-4"><span>World Register</span></h6>
+              <h6 class="ttls_minimum in_head mb-4"><span>Nova Terra</span></h6>
               <h2 class="mt-3">Lista de clientes</h2>
               <p class="my_paragraph mt-3">
               <div class="col-md-12">

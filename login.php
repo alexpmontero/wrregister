@@ -56,10 +56,10 @@ if (isset($_POST['login'])) {
         <div class="row">
         <div class="col-md-12">
             <div class="sec_head_page_info">
-              <h6 class="ttls_minimum in_head mb-4"><span>World Register</span></h6>
+              <h6 class="ttls_minimum in_head mb-4"><span>Nova Terra</span></h6>
               <h3 class="ttl_home">Iniciar sesión</h3>
               <p class="my_paragraph mt-3">
-                Bienvenido a World Register
+                Bienvenido a Nova Terra
               </p>
             </div>
         </div>
