@@ -1,18 +1,23 @@
 <div class="drawer_top_hd">
   <div class="sec_top_hd container-lg">
     <div class="cont_data">
-      <a href="tel:+559933524257">
+      <a href="tel:+9936342794">
         <span class="pe-1"><ion-icon name="call"></ion-icon></span>
-        <span>(993) 352 4257</span>
+        <span>(993) 634 2794</span>
       </a>
-      <a href="mailto:atencionaclientes@novaterra.com" class="mail data"
+      <a href="tel:+9936342795">
+        <span>(993) 634 2795</span>
+      </a>
+
+
+      <!-- <a href="mailto:atencionaclientes@novaterra.com" class="mail data"
         ><span class="pe-1"><ion-icon name="mail-outline"></ion-icon></span>
         <span>atencionaclientes@novaterra.com</span></a
-      >
+      > -->
     </div>
     <div class="cont_linkeos">
-      <a  href="quejas-apelaciones">Quejas y apelaciones</a>
-      <a class="nextcourse" href="https://novaterra.com:2096/">Webmail</a>
+      <a href="#">¡Te escuchamos!</a>
+      <!-- <a class="nextcourse" href="https://novaterra.com:2096/">Webmail</a> -->
     </div>
   </div>
 </div>
@@ -31,17 +36,19 @@
       <a class="a_index" data-seccion="index" href="index"> INICIO </a>
       <a data-seccion="nosotros" href="nosotros">NOSOTROS</a>
       <a data-seccion="servicios" href="servicios">SERVICIOS</a>
-      <a data-seccion="other-services" href="other-services">OTROS SERVICIOS</a>
-      <a data-seccion="documentacion" href="documentacion"
-        >DOCUMENTACIÓN</a
+      <a data-seccion="proceso-certificacion" href="proceso-certificacion"
+        >PROCESO DE CERTIFICACIÓN</a
       >
-      <a data-seccion="vigencia" class="maxw trans" href="vigencia-certificado">VIGENCIAS</a>
-      <a data-seccion="contacto" href="contacto">CONTACTO</a>
+      <a data-seccion="capacitacion" href="capacitacion">CAPACITACIÓN</a>
+      <a data-seccion="vigencia" class="maxw trans" href="#"
+        >VIGENCIAS</a
+      >
+      <a data-seccion="contacto" href="#">COTIZACIÓN Y CONTACTO</a>
     </nav>
     <!-- <div class="cont_btns">
       <a href="contacto.html" class="btn btn_secundary">COTIZAR AHORA</a>
     </div> -->
-    <span class="btn_menu" >
+    <span class="btn_menu">
       <span></span>
       <span></span>
       <span></span>
@@ -66,10 +73,10 @@
       $("a[data-seccion='servicios']").addClass("sec_active");
     } else if (/services/.test(url)) {
       $(".a_index").removeClass("sec_active");
-      $("a[data-seccion='other-services']").addClass("sec_active");
-    } else if (/documentacion/.test(url)) {
+      $("a[data-seccion='proceso-certificacion']").addClass("sec_active");
+    } else if (/capacitacion/.test(url)) {
       $(".a_index").removeClass("sec_active");
-      $("a[data-seccion='documentacion']").addClass("sec_active");
+      $("a[data-seccion='capacitacion']").addClass("sec_active");
     } else if (/vigencia/.test(url)) {
       $(".a_index").removeClass("sec_active");
       $("a[data-seccion='vigencia']").addClass("sec_active");
@@ -82,8 +89,8 @@
 
   function menu() {
     $(".btn_menu").click(function () {
-      $(this).toggleClass('visible_menu');
-      $('.cont_navs_menus').toggleClass('show_menu');
+      $(this).toggleClass("visible_menu");
+      $(".cont_navs_menus").toggleClass("show_menu");
     });
   }
   menu();
