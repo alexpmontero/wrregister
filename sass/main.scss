@@ -132,6 +132,11 @@ img {
   border-color: var(--secundry_color);
 }
 
+.max__w {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
 // ====
 
 .wrapper_header {
@@ -557,6 +562,7 @@ img {
         margin-top: -125px;
         img {
           max-width: 500px;
+          border-radius: .25rem .25rem 15rem .25rem;
         }
       }
       .box_experience_info {
@@ -1036,13 +1042,6 @@ img {
     }
   }
   .sec_info_form {
-    .box_form {
-      background: #ffffff;
-      margin: 0 auto;
-      max-width: 500px;
-      padding: 1.5rem;
-      border-radius: 1rem;
-    }
     .close {
       border: 0;
       margin-right: 0.5rem;
@@ -1052,6 +1051,14 @@ img {
       background: rgb(12, 12, 12, 0.1);
     }
   }
+}
+
+.box_form {
+  background: #ffffff;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
 
 .verications {
@@ -1066,6 +1073,10 @@ img {
     min-height: 100%;
     margin-bottom: 2rem;
   }
+}
+
+.wrapper_section{
+  margin-top: 7rem;
 }
 
 @media screen and (max-width: 990px) {

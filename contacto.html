@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Contacto - Nova Terra Certificación</title>
+    <title>Contacto</title>
     <link rel="icon" type="image/png" href="imgs/ico.png" />
     <meta charset="UTF-8" />
     <meta
@@ -66,7 +66,7 @@
           <div class="col-md-6">
             <div class="sec_head_page_info">
               <h6 class="ttls_minimum in_head mb-4">
-                <span>I N F O R M A C I Ó N</span>
+                <span>mayores informes</span>
               </h6>
               <h3 class="ttl_home">Contáctanos</h3>
               <!-- <p class="my_paragraph mt-3">
@@ -81,60 +81,18 @@
     <section class="wrapper_contact">
       <div class="container-lg">
         <div class="row row_contact">
-          <div class="col-md-6 mb-2">
-            <div class="sec_info_contact">
-              <h3 class="ttl_primary text-center">¿Necesita ayuda?</h3>
-              <div class="box_info">
-                <div class="box_item_data">
-                  <div class="item_data">
-                    <span class="ico"
-                      ><ion-icon name="location"></ion-icon></span
-                    ><a
-                      href="https://goo.gl/maps/smF2tPgV44jQJhHG6"
-                      class="data"
-                      >Paseo de la Ceiba esq. La Pigua Num.102, Int. 202, Col.
-                      1ro de Mayo, CP 86190. Villahermosa, Tabasco, México.</a
-                    >
-                  </div>
-                </div>
-                <div class="box_item_data">
-                  <div class="item_data">
-                    <span class="ico"
-                      ><ion-icon name="mail-outline"></ion-icon></span
-                    ><a href="" class="data text-truncate"
-                      >atencionaclientes@novaterra.com</a
-                    >
-                  </div>
-                </div>
-                <div class="box_item_data">
-                  <div class="item_data">
-                    <span class="ico"><ion-icon name="call"></ion-icon></span>
-                    <div class="data">
-                      <a href="#" class="phone">(993) 3524257 </a> <br />
-                      <span>Lunes a Viernes de 8:00 a 17:00 hrs.</span><br />
-                      <span>Sábados de 8:00 a 13:00 hrs.</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="box_maps">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.984267305717!2d-92.9386281351293!3d17.979468937726256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd9c62497ce87%3A0x970563e16ded5393!2sWorld%20Register%20S.A%20de%20C.V!5e0!3m2!1ses-419!2smx!4v1643654912069!5m2!1ses-419!2smx"
-                    width="600"
-                    height="450"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="col-md-6 mb-5 colfirst">
             <div class="sec_info_form">
               <h3 class="ttl_primary text-center">
-                Permítenos conocer tus necesidades
+                ¿Te ayudamos en tu certificación? Solicita una cotización
               </h3>
-              <form class="box_form box_shaddow" name="formulario_contacto" id="formulario_contacto" enctype="multipart/form-data">
+              <h5 class="mb-4">¿Tienes dudas? Estamos a tu disposición</h5>
+              <form
+                class="box_form box_shaddow"
+                name="formulario_contacto"
+                id="formulario_contacto"
+                enctype="multipart/form-data"
+              >
                 <div class="row">
                   <div class="mb-4 col-md-6">
                     <label for="name" class="form-label">Nombre(s)</label>
@@ -167,6 +125,16 @@
                     />
                   </div>
                   <div class="mb-4 col-md-6">
+                    <label for="org" class="form-label">Puesto</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="puesto"
+                      name="puesto"
+                      aria-describedby="puestolHelp"
+                    />
+                  </div>
+                  <div class="mb-4 col-md-6">
                     <label for="telefono" class="form-label">Teléfono</label>
                     <input
                       type="text"
@@ -176,7 +144,7 @@
                       aria-describedby="telefono"
                     />
                   </div>
-                  <div class="mb-4 col-md-12">
+                  <div class="mb-4 col-md-6">
                     <label for="email" class="form-label"
                       >Correo electrónico</label
                     >
@@ -188,14 +156,92 @@
                       aria-describedby="emailHelp"
                     />
                   </div>
+                  <h5 class="mt-5">Solicitud de:</h5>
                   <div class="mb-4 col-md-12">
-                    <label for="cars">Asunto:</label>
-                    <select name="asunto" id="asunto" class="form-select">
-                      <option value="">Seleccione</option>
-                      <option value="cotizar">Cotizar un servicio</option>
-                      <option value="dudas">Dudas o sugerencias</option>
-                      <option value="postulacion">Postulación para auditor/experto</option>
-                    </select>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio1"
+                        value="option1"
+                      />
+                      <label class="form-check-label" for="inlineRadio1"
+                        >Cotización</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="inlineRadio2"
+                        >Información general</label
+                      >
+                    </div>
+                  </div>
+                  <div>
+                    <small class="c_primary"
+                      >Contestar solo para cotización</small
+                    >
+                  </div>
+                  <div class="mb-4 col-md-6">
+                    <label for="" class="form-label"
+                      >Norma (s) requerida (s)*</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id=""
+                      name=""
+                      aria-describedby=""
+                    />
+                  </div>
+                  <div class="mb-4 col-md-6">
+                    <label for="" class="form-label"
+                      >Giro o actividad principal*
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id=""
+                      name=""
+                      aria-describedby=""
+                    />
+                  </div>
+                  <div class="mb-1 col-md-12">
+                    <h5 class="form">
+                      ¿Cuentas con un sistema de gestión implementado?*
+                    </h5>
+                    <div class="mb-4 col-md-12">
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioSistema"
+                          id="radiosis1"
+                          value="option1"
+                        />
+                        <label class="form-check-label" for="radiosis1"
+                          >Cotización</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioSistema"
+                          id="radiosis2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="radiosis2"
+                          >Información general</label
+                        >
+                      </div>
+                    </div>
                   </div>
 
                   <div class="mb-4 col-md-12">
@@ -209,28 +255,89 @@
                       rows="2"
                     ></textarea>
                   </div>
-                  <div class="mb-4 col-md-12">
-                    <div class="form-check form-switch">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        role="switch"
-                        id="flexSwitchCheckChecked"
-                      />
-                      <label
-                        class="form-check-label"
-                        for="flexSwitchCheckChecked"
-                        >Acepto términos y condiciones</label
-                      >
-                    </div>
-                  </div>
+
                   <!-- Mensajes de Validación -->
-			            <div class="msg mt-3 mb-3"></div>
+                  <div class="msg mt-3 mb-3"></div>
                   <div class="col-md-12 text-center">
-                    <button type="submit" class="btn btn_primary" id="btnenviar" name="btnenviar">Enviar</button>
+                    <button
+                      type="submit"
+                      class="btn btn_primary"
+                      id="btnenviar"
+                      name="btnenviar"
+                    >
+                      Enviar
+                    </button>
+                    <p class="mt-4">
+                      Para mayores informes o resolver sus dudas con respecto a
+                      cómo solicitar una cotización o información general, favor
+                      de contactarnos al correo
+                      <a class="c_primary" href="mailto:info@novaterrapc.com.mx"
+                        >info@novaterrapc.com.mx</a
+                      >
+                      o
+                      <a
+                        class="c_primary"
+                        href="mailto:ventas@novaterrapc.com.mx"
+                        >ventas@novaterrapc.com.mx</a
+                      >
+                    </p>
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-2">
+            <div class="sec_info_contact">
+              <h3 class="ttl_primary text-center">¿Necesita ayuda?</h3>
+              <div class="box_info">
+                <div class="box_item_data">
+                  <div class="item_data">
+                    <span class="ico"
+                      ><ion-icon name="location"></ion-icon></span
+                    ><a
+                      href="https://goo.gl/maps/yUFQRphVEik1LYun9"
+                      target="_blank"
+                      class="data"
+                      >Av. Periférico Carlos Pellicer Cámara, No. 4002 Int. 2,
+                      Colonia Espejo II, C.P. 86109 Villahermosa, Tabasco.</a
+                    >
+                  </div>
+                </div>
+                <div class="box_item_data">
+                  <div class="item_data">
+                    <span class="ico"
+                      ><ion-icon name="mail-outline"></ion-icon></span
+                    ><a
+                      href="mailto:ventas@novaterrapc.com.mx"
+                      class="data text-truncate"
+                      >ventas@novaterrapc.com.mx</a
+                    >
+                  </div>
+                </div>
+                <div class="box_item_data">
+                  <div class="item_data">
+                    <span class="ico"><ion-icon name="call"></ion-icon></span>
+                    <div class="data">
+                      <a href="#" class="phone">(993) 634 2794 </a> /
+                      <a href="#" class="phone">(993) 634 2795 </a> <br />
+                      <span>Lunes a Viernes de 8:00 a 17:00 hrs.</span><br />
+                      <span>Sábados de 8:00 a 13:00 hrs.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="box_maps">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.644426237722!2d-92.9585951206543!3d17.995272599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd796721c7f5d%3A0x7cff7a99cd8179ca!2sPerif.%20Carlos%20Pellicer%20C%C3%A1mara%204002%2C%20El%20Espejo%20II%2C%2086109%20Villahermosa%2C%20Tab.!5e0!3m2!1ses-419!2smx!4v1670282629144!5m2!1ses-419!2smx"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>

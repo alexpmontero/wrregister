@@ -129,6 +129,11 @@ img {
   border-color: var(--secundry_color);
 }
 
+.max__w {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
 .wrapper_header {
   position: fixed;
   top: 0;
@@ -528,6 +533,7 @@ img {
 }
 .wrapper_experience .drawer_experience .container-lg .box_img_experience img {
   max-width: 500px;
+  border-radius: 0.25rem 0.25rem 15rem 0.25rem;
 }
 .wrapper_experience .drawer_experience .container-lg .box_experience_info {
   padding-top: 4rem;
@@ -980,13 +986,6 @@ img {
   width: 100%;
   border-radius: 0.5rem;
 }
-.wrapper_contact .sec_info_form .box_form {
-  background: #ffffff;
-  margin: 0 auto;
-  max-width: 500px;
-  padding: 1.5rem;
-  border-radius: 1rem;
-}
 .wrapper_contact .sec_info_form .close {
   border: 0;
   margin-right: 0.5rem;
@@ -994,6 +993,14 @@ img {
   border-radius: 0.25rem;
   cursor: pointer;
   background: rgba(12, 12, 12, 0.1);
+}
+
+.box_form {
+  background: #ffffff;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
 
 .verications .sec_info_form .box_form {
@@ -1006,6 +1013,10 @@ img {
 .verications .ttl_primary {
   min-height: 100%;
   margin-bottom: 2rem;
+}
+
+.wrapper_section {
+  margin-top: 7rem;
 }
 
 @media screen and (max-width: 990px) {
