@@ -110,6 +110,10 @@ img {
   line-height: 1.15;
 }
 
+.ttl_secundary {
+  font-weight: 600;
+}
+
 .my_paragraph {
   font-size: 20px;
   line-height: 1.4;
@@ -122,6 +126,10 @@ img {
 
 .c_primary {
   color: var(--primary_color);
+}
+
+.c_tercery {
+  color: var(--tercer_color);
 }
 
 .form-check-input:checked {
@@ -292,6 +300,9 @@ img {
 .wrapper_footer {
   color: #ffffff;
   font-size: 0.9rem;
+}
+.wrapper_footer a:hover {
+  color: var(--tercer_color);
 }
 .wrapper_footer .foot_top {
   background: #222222;
@@ -554,6 +565,53 @@ img {
   padding: 5rem 0;
 }
 
+.sec_boxes_info {
+  margin-top: 4rem;
+}
+.sec_boxes_info .item_benefits {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.sec_boxes_info .item_benefits span {
+  font-size: 1.1rem;
+}
+.sec_boxes_info .item_benefits span:first-child {
+  margin-right: 0.65rem;
+  font-size: 2.25rem;
+}
+
+.section_colors {
+  padding: 3rem 0;
+  margin: 3rem 0 0;
+  background: #295907;
+  background: linear-gradient(6deg, #295907 0%, #419f00 64%);
+  color: #eeeeee;
+}
+.section_colors .c_black {
+  color: #071001;
+}
+
+.bg_break_bg {
+  filter: grayscale(1);
+  background: url(../imgs/bg-break.webp) no-repeat center center;
+  background-size: cover;
+  min-height: 300px;
+}
+
+.sections {
+  padding: 5rem 0 3rem;
+}
+
+.item_sections {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.item_sections a {
+  color: var(--tercer_color);
+}
+
 .wrapper_head_page {
   background: url(../imgs/bg_nosotros.jpg) no-repeat center bottom;
   background-size: cover;
@@ -739,6 +797,7 @@ img {
   overflow-x: auto;
   gap: 15px;
   flex-wrap: nowrap;
+  padding-bottom: 2rem;
 }
 .wrapper_service .tabs_services .nav::-webkit-scrollbar {
   height: 8px;
@@ -819,23 +878,6 @@ img {
 .wrapper_service .tabs_services .tab-content .content__infos .box_info_ii .my_paragraph {
   margin-top: 4rem;
   text-align: center;
-}
-
-.sec_benefits {
-  margin: 0 auto;
-  padding: 5rem 0;
-  max-width: 1100px;
-}
-.sec_benefits .item_benefits {
-  display: flex;
-  margin-bottom: 2rem;
-}
-.sec_benefits .item_benefits span {
-  font-size: 1.1rem;
-}
-.sec_benefits .item_benefits span:first-child {
-  margin-right: 0.65rem;
-  font-size: 2.25rem;
 }
 
 .sec_benefits_others {

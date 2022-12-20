@@ -132,6 +132,11 @@ img {
   line-height: 1.15;
 }
 
+.ttl_secundary{
+  // text-transform: uppercase;
+  font-weight: 600;
+}
+
 .my_paragraph {
   font-size: 20px;
   line-height: 1.4;
@@ -144,6 +149,9 @@ img {
 
 .c_primary {
   color: var(--primary_color);
+}
+.c_tercery {
+  color: var(--tercer_color);
 }
 
 .form-check-input:checked {
@@ -322,6 +330,7 @@ img {
 .wrapper_footer {
   color: #ffffff;
   font-size: 0.9rem;
+  a:hover{color: var(--tercer_color);}
   .foot_top {
     background: #222222;
     padding: 1.5rem 0;
@@ -605,6 +614,52 @@ img {
   padding: 5rem 0;
 }
 
+.sec_boxes_info {
+  margin-top: 4rem;
+  .item_benefits {
+    display: flex;
+    margin-bottom: 2rem;
+    span {
+      font-size: 1.1rem;
+      &:first-child {
+        margin-right: 0.65rem;
+        font-size: 2.25rem;
+      }
+    }
+  }
+}
+
+.section_colors{
+  padding: 3rem 0;
+  margin: 3rem 0 0;
+  background: rgb(41,89,7);
+  background: linear-gradient(6deg, rgba(41,89,7,1) 0%, rgba(65,159,0,1) 64%);
+  color: #eeeeee;
+  .c_black{
+    color: #071001;
+  }
+}
+
+.bg_break_bg{
+  filter: grayscale(1);
+  background: url(../imgs/bg-break.webp) no-repeat center center;
+  background-size: cover;
+  min-height: 300px;
+}
+
+.sections{
+  padding: 5rem 0 3rem;
+}
+
+
+.item_sections{
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  a{color: var(--tercer_color);}
+  margin-bottom: 2rem;
+}
+
 // === PAGE NOSOTROS ===
 .wrapper_head_page {
   background: url(../imgs/bg_nosotros.jpg) no-repeat center bottom;
@@ -798,6 +853,7 @@ img {
       overflow-x: auto;
       gap: 15px;
       flex-wrap: nowrap;
+      padding-bottom: 2rem;
       .nav-link {
         background: #ffffff;
         min-height: 140px;
@@ -870,22 +926,7 @@ img {
   }
 }
 
-.sec_benefits {
-  margin: 0 auto;
-  padding: 5rem 0;
-  max-width: 1100px;
-  .item_benefits {
-    display: flex;
-    margin-bottom: 2rem;
-    span {
-      font-size: 1.1rem;
-      &:first-child {
-        margin-right: 0.65rem;
-        font-size: 2.25rem;
-      }
-    }
-  }
-}
+
 
 .sec_benefits_others {
   padding: 6rem 0;
