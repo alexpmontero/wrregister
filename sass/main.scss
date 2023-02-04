@@ -483,7 +483,7 @@ img {
     }
   }
   .box_item_imgs_mx {
-    padding-top: 7.5rem;
+    padding-top: 6rem;
     padding-bottom: 5rem;
     .item_imgs_mx {
       text-align: center;
@@ -742,6 +742,23 @@ img {
   }
 }
 
+.sec_item_philosophy {
+  margin: 6rem 0;
+  h3 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .my_paragraph,
+  ul {
+    background: rgb(238, 242, 247);
+    padding-top: 1rem;
+    padding: 1.25rem;
+    font-size: 1.15rem;
+    border-left: 3px solid #333333;
+    margin-bottom: 5rem;
+  }
+}
+
 .wrapper_philosophy {
   margin-top: 7.5rem;
   margin-bottom: 7.5rem;
@@ -754,37 +771,22 @@ img {
     max-width: 1150px;
     margin: 4rem auto;
 
-    .label_principio {
-      min-height: 80px;
-      font-weight: 400;
-      border: 2px solid var(--secundry_color);
-      border-radius: 0.5rem;
-      padding: 1rem;
-      &.xc {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      span {
-        font-weight: 700;
-      }
-    }
-    .sec_item_philosophy {
-      margin: 6rem 0;
-      h3 {
-        font-weight: 700;
-        font-size: 2rem;
-      }
-      .my_paragraph,
-      ul {
-        background: rgb(238, 242, 247);
-        padding-top: 1rem;
-        padding: 1.25rem;
-        font-size: 1.15rem;
-        border-left: 3px solid #333333;
-        margin-bottom: 5rem;
-      }
-    }
+   
+  }
+}
+.label_principio {
+  min-height: 80px;
+  font-weight: 400;
+  border: 2px solid var(--secundry_color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  &.xc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  span {
+    font-weight: 700;
   }
 }
 
@@ -1282,7 +1284,7 @@ img {
       }
     }
   }
-  .wrapper_philosophy .sec_info_philosophy .sec_item_philosophy {
+  .sec_item_philosophy {
     margin-bottom: 2rem;
     .my_paragraph {
       min-height: 100%;

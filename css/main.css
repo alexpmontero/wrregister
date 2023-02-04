@@ -447,7 +447,7 @@ img {
   margin-bottom: 2rem;
 }
 .wrapper_do_we_do .box_item_imgs_mx {
-  padding-top: 7.5rem;
+  padding-top: 6rem;
   padding-bottom: 5rem;
 }
 .wrapper_do_we_do .box_item_imgs_mx .item_imgs_mx {
@@ -688,6 +688,23 @@ img {
   height: 90px;
 }
 
+.sec_item_philosophy {
+  margin: 6rem 0;
+}
+.sec_item_philosophy h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.sec_item_philosophy .my_paragraph,
+.sec_item_philosophy ul {
+  background: #eef2f7;
+  padding-top: 1rem;
+  padding: 1.25rem;
+  font-size: 1.15rem;
+  border-left: 3px solid #333333;
+  margin-bottom: 5rem;
+}
+
 .wrapper_philosophy {
   margin-top: 7.5rem;
   margin-bottom: 7.5rem;
@@ -701,36 +718,21 @@ img {
   max-width: 1150px;
   margin: 4rem auto;
 }
-.wrapper_philosophy .sec_info_philosophy .label_principio {
+
+.label_principio {
   min-height: 80px;
   font-weight: 400;
   border: 2px solid var(--secundry_color);
   border-radius: 0.5rem;
   padding: 1rem;
 }
-.wrapper_philosophy .sec_info_philosophy .label_principio.xc {
+.label_principio.xc {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.wrapper_philosophy .sec_info_philosophy .label_principio span {
+.label_principio span {
   font-weight: 700;
-}
-.wrapper_philosophy .sec_info_philosophy .sec_item_philosophy {
-  margin: 6rem 0;
-}
-.wrapper_philosophy .sec_info_philosophy .sec_item_philosophy h3 {
-  font-weight: 700;
-  font-size: 2rem;
-}
-.wrapper_philosophy .sec_info_philosophy .sec_item_philosophy .my_paragraph,
-.wrapper_philosophy .sec_info_philosophy .sec_item_philosophy ul {
-  background: #eef2f7;
-  padding-top: 1rem;
-  padding: 1.25rem;
-  font-size: 1.15rem;
-  border-left: 3px solid #333333;
-  margin-bottom: 5rem;
 }
 
 .wrapper_certif {
@@ -1193,10 +1195,10 @@ img {
     display: none;
   }
 
-  .wrapper_philosophy .sec_info_philosophy .sec_item_philosophy {
+  .sec_item_philosophy {
     margin-bottom: 2rem;
   }
-  .wrapper_philosophy .sec_info_philosophy .sec_item_philosophy .my_paragraph {
+  .sec_item_philosophy .my_paragraph {
     min-height: 100%;
   }
 
