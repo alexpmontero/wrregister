@@ -1353,6 +1353,10 @@ img {
     display: none;
   }
 
+  .wrapper_header .drawer_top_hd .sec_top_hd .cont_data {
+    display: none;
+  }
+
   .wrapper_home .drawer_home .sec_content_home .ttls_minimum {
     margin-bottom: 3rem;
   }
@@ -1390,12 +1394,5 @@ img {
 @media screen and (max-width: 380px) {
   .wrapper_links_docs .sec_links .box_item_links {
     width: 95%;
-  }
-
-  .wrapper_header .drawer_top_hd .sec_top_hd {
-    justify-content: f;
-  }
-  .wrapper_header .drawer_top_hd .sec_top_hd .cont_data {
-    display: none;
   }
 }

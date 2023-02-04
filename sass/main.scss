@@ -1490,6 +1490,13 @@ img {
       }
     }
   }
+  .wrapper_header {
+    .drawer_top_hd .sec_top_hd {
+      .cont_data {
+        display: none;
+      }
+    }
+  }
   .wrapper_home .drawer_home {
     .sec_content_home {
       .ttls_minimum {
@@ -1534,12 +1541,5 @@ img {
       }
     }
   }
-  .wrapper_header {
-    .drawer_top_hd .sec_top_hd {
-      justify-content: f;
-      .cont_data {
-        display: none;
-      }
-    }
-  }
+
 }
