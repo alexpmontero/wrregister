@@ -16,7 +16,7 @@
       > -->
     </div>
     <div class="cont_linkeos">
-      <a href="te-escuchamos">Quejas y sugerencias</a>
+      <a href="te-escuchamos">Felicitaciones, quejas, sugerencias y apelaciones</a>
       <!-- <a class="nextcourse" href="https://novaterra.com:2096/">Webmail</a> -->
     </div>
   </div>
@@ -34,7 +34,7 @@
     </div>
     <nav class="cont_navs_menus">
       <a class="a_index" data-seccion="index" href="index"> INICIO </a>
-      <a data-seccion="nosotros" href="nosotros">NOSOTROS</a>
+      <!-- <a data-seccion="nosotros" href="nosotros">NOSOTROS</a> -->
       <a data-seccion="servicios" href="servicios">SERVICIOS</a>
       <a data-seccion="proceso-certificacion" href="proceso-certificacion"
         >PROCESO DE CERTIFICACIÓN</a
@@ -65,9 +65,6 @@
 
     if (/index/.test(url)) {
       $("a[data-seccion='index']").addClass("sec_active");
-    } else if (/nosotros/.test(url)) {
-      $(".a_index").removeClass("sec_active");
-      $("a[data-seccion='nosotros']").addClass("sec_active");
     } else if (/servicios/.test(url)) {
       $(".a_index").removeClass("sec_active");
       $("a[data-seccion='servicios']").addClass("sec_active");
