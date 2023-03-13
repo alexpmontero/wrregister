@@ -132,9 +132,8 @@ img {
   line-height: 1.15;
 }
 
-.ttl_secundary{
-  // text-transform: uppercase;
-  font-weight: 600;
+.ttl_secundary {
+  font-weight: 700;
 }
 
 .my_paragraph {
@@ -237,7 +236,7 @@ img {
           max-width: 110px;
         }
       }
-      
+
       .btn_menu {
         display: none;
         margin-left: 0.75rem;
@@ -330,7 +329,9 @@ img {
 .wrapper_footer {
   color: #ffffff;
   font-size: 0.9rem;
-  a:hover{color: var(--tercer_color);}
+  a:hover {
+    color: var(--tercer_color);
+  }
   .foot_top {
     background: #222222;
     padding: 1.5rem 0;
@@ -353,7 +354,7 @@ img {
 }
 
 .wrapper_home {
-  background: url(../imgs/bg_home.jpg) no-repeat center bottom;
+  background: url(../imgs/bg_home.jpg) no-repeat center top;
   background-size: cover;
   min-height: 600px;
   height: 100vh;
@@ -364,11 +365,11 @@ img {
   position: relative;
   &::after {
     content: "";
-    background: rgb(67, 134, 21);
+    background: rgb(30, 116, 0);
     background: linear-gradient(
-      9deg,
-      rgba(67, 134, 21, 0.9) 26%,
-      rgba(124, 205, 32, 0.4) 97%
+      0deg,
+      rgba(30, 116, 0, 0.9) 41%,
+      rgba(102, 182, 12, 0.75) 100%
     );
     top: 0;
     left: 0;
@@ -383,7 +384,7 @@ img {
       max-width: 800px;
       margin: 0 auto;
       color: #ffffff;
-      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+      text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.13);
       .ttls_minimum {
         margin-bottom: 4rem;
         span {
@@ -488,7 +489,7 @@ img {
     .item_imgs_mx {
       text-align: center;
       h5 {
-        min-height: 55px;
+        min-height: 45px;
       }
       .box_imgs_mx {
         background-size: cover;
@@ -522,6 +523,9 @@ img {
         }
         &.iv {
           background-image: url(../imgs/mx04.png);
+        }
+        &.v {
+          background-image: url(../imgs/mx05.jpg);
         }
       }
     }
@@ -615,48 +619,58 @@ img {
 }
 
 .sec_boxes_info {
-  margin-top: 4rem;
-  .item_benefits {
-    display: flex;
-    margin-bottom: 2rem;
-    span {
-      font-size: 1.1rem;
-      &:first-child {
-        margin-right: 0.65rem;
-        font-size: 2.25rem;
-      }
-    }
+  margin: 4rem auto;
+  max-width: 800px;
+  ul li{
+    margin-bottom: 1.25rem;
   }
+  // .item_benefits {
+  //   display: flex;
+  //   margin-bottom: 2rem;
+  //   span {
+  //     font-size: 1.1rem;
+  //     &:first-child {
+  //       margin-right: 0.65rem;
+  //       font-size: 2.25rem;
+  //     }
+  //   }
+  // }
 }
 
-.section_colors{
+.section_colors {
   padding: 3rem 0;
   margin: 3rem 0 0;
-  background: rgb(41,89,7);
-  background: linear-gradient(6deg, rgba(41,89,7,1) 0%, rgba(65,159,0,1) 64%);
+  background: rgb(41, 89, 7);
+  background: linear-gradient(
+    6deg,
+    rgba(41, 89, 7, 1) 0%,
+    rgba(65, 159, 0, 1) 64%
+  );
   color: #eeeeee;
-  .c_black{
+  .c_black {
     color: #071001;
   }
 }
 
-.bg_break_bg{
+.bg_break_bg {
   filter: grayscale(1);
   background: url(../imgs/bg-break.webp) no-repeat center center;
   background-size: cover;
   min-height: 300px;
+  background-attachment: fixed;
 }
 
-.sections{
+.sections {
   padding: 5rem 0 3rem;
 }
 
-
-.item_sections{
+.item_sections {
   background: #ffffff;
   border-radius: 1rem;
   padding: 1rem;
-  a{color: var(--tercer_color);}
+  a {
+    color: var(--tercer_color);
+  }
   margin-bottom: 2rem;
 }
 
@@ -665,8 +679,9 @@ img {
   background: url(../imgs/bg_nosotros.jpg) no-repeat center bottom;
   background-size: cover;
   color: #ffffff;
-  padding-top: 175px;
+  padding-top: 200px;
   position: relative;
+  max-height: 500px;
   &::after {
     content: "";
     position: absolute;
@@ -701,14 +716,14 @@ img {
     }
     .sec_head_page_img {
       position: relative;
-      bottom: -100px;
+      bottom: 0;
       z-index: 1;
     }
   }
 }
 
 .wrapper_our_story {
-  margin-top: 12rem;
+  margin-top: 7rem;
   .sec_ttls_story {
     text-align: center;
     max-width: 900px;
@@ -770,8 +785,6 @@ img {
   .sec_info_philosophy {
     max-width: 1150px;
     margin: 4rem auto;
-
-   
   }
 }
 .label_principio {
@@ -791,7 +804,7 @@ img {
 }
 
 .wrapper_certif {
-  margin-top: 12rem;
+  margin-top: 10rem;
   .sec_ttls_certif {
     text-align: center;
     max-width: 900px;
@@ -849,7 +862,7 @@ img {
 // ==== SERVICE ===
 .wrapper_service {
   .tabs_services {
-    margin: 4.25rem 0;
+    margin: 4.25rem 0 9rem;
     .nav {
       @include scrollbar_horizontal;
       overflow-x: auto;
@@ -927,8 +940,6 @@ img {
     }
   }
 }
-
-
 
 .sec_benefits_others {
   padding: 6rem 0;
@@ -1351,13 +1362,13 @@ img {
   .wrapper_service {
     .tabs_services {
       .nav {
-        padding: 1rem .5rem 1.5rem;
-        .nav-item{
+        padding: 1rem 0.5rem 1.5rem;
+        .nav-item {
           min-width: 250px;
         }
       }
-      .content__infos{
-        &>.col-md-6{
+      .content__infos {
+        & > .col-md-6 {
           max-width: 100% !important;
         }
       }
@@ -1422,9 +1433,7 @@ img {
   .wrapper_header .drawer_top_hd {
     .sec_top_hd {
       .cont_data {
-        .mail {
           display: none;
-        }
       }
       .cont_linkeos {
         .nextcourse {
@@ -1541,5 +1550,4 @@ img {
       }
     }
   }
-
 }

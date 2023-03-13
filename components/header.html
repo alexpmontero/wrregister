@@ -39,7 +39,7 @@
       <a data-seccion="proceso-certificacion" href="proceso-certificacion"
         >PROCESO DE CERTIFICACIÓN</a
       >
-      <!-- <a data-seccion="capacitacion" href="capacitacion">CAPACITACIÓN</a> -->
+      <a data-seccion="capacitacion" href="capacitacion">CAPACITACIÓN</a>
       <a data-seccion="vigencia" class="maxw trans" href="vigencias"
         >VIGENCIAS</a
       >
@@ -74,6 +74,9 @@
     } else if (/proceso-certificacion/.test(url)) {
       $(".a_index").removeClass("sec_active");
       $("a[data-seccion='proceso-certificacion']").addClass("sec_active");
+    } else if (/capacitacion/.test(url)) {
+      $(".a_index").removeClass("sec_active");
+      $("a[data-seccion='capacitacion']").addClass("sec_active");
     } else if (/vigencia/.test(url)) {
       $(".a_index").removeClass("sec_active");
       $("a[data-seccion='vigencia']").addClass("sec_active");
