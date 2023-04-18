@@ -98,7 +98,7 @@
     exit();
 
   }
-
+  /*
   // Subir Archivo 
   $directorio_destino = "uploads/";
   $archivo_destino = $directorio_destino . basename($_FILES["img"]["name"]);
@@ -133,6 +133,8 @@
       echo (json_encode($dab));
       exit();
   }
+
+  */
   /*
   // Permitimos solo ciertos formatos de imagen 
   if($formatoImagen != "jpg" && $formatoImagen != "png" && $formatoImagen != "gif") {
@@ -176,13 +178,13 @@ else {
 /* Configuración para el envio del Correo */
 
 //Correo a donde caeran los mensajes del formulario
-// $correo = "santiago.perezm.softtek@gmail.com";
-$correo = "atencionaclientes@novaterra.com";
+$correo = "info@novaterrapc.com.mx";
+// $correo = "atencionaclientes@novaterra.com";
 // Asunto 
 $e_asunto= 'Mensaje de Contacto';
 
 //$archivo = 'https://tudominio.com/uploads/'.$nuevonombreimagen;
-$archivo = 'uploads/'.$nuevonombreimagen;
+//$archivo = 'uploads/'.$nuevonombreimagen;
 
 // Preparamos el encabezado del correo 
 $e_bodya = "<p><b>Nombre:</b> $nya" . PHP_EOL . PHP_EOL . "</p>";
@@ -193,7 +195,7 @@ $e_bodyf = "<p><b>Asunto:</b> $asunto" . PHP_EOL . PHP_EOL . "</p>";
 $e_reply = "<p><b>Email:</b> $email" . PHP_EOL . PHP_EOL . "</p>";
 $e_bodyc = "<p><b>Mensaje:</b> $mensaje" . PHP_EOL . PHP_EOL . "</p>";
 
-$msg = wordwrap( $e_bodya . $e_bodyg . $e_bodyd . $e_bodye . $e_bodyf . $e_bodyc . $e_reply, 80 );
+$msg = wordwrap( $e_bodya . $e_bodyg . $e_bodyd . $e_bodye . $e_bodyf . $e_bodyc . $e_reply, 26 );
 
 // Creamos el encabezado del correo 
 $headers = "From: ".$nya." <".$email.">" . PHP_EOL;
@@ -216,7 +218,8 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
       "b" => $b
     );
 
-    echo (json_encode($dab));
+    echo (mail($correo, $e_asunto, $msg, $headers));
+    //echo (json_encode($dab));
 
   } else {
     $dab = array(
