@@ -16,10 +16,11 @@
   $email = $_POST['email'];
   $asunto = $_POST['inlineRadioOptions'];
   $puesto = $_POST['puesto'];
-  //$img = $_FILES['img'];
+  //$img = $_FILES['img_cert'];
   $mensaje = $_POST['mensaje'];
   $norma = $_POST['norma'];
   $giro = $_POST['giro'];
+  $namecert = $_POST['namecert'];
 
 
   if(trim($nya) == '') {
@@ -137,7 +138,7 @@
       exit();
   }
 
-  */
+  
   /*
   // Permitimos solo ciertos formatos de imagen 
   if($formatoImagen != "jpg" && $formatoImagen != "png" && $formatoImagen != "gif") {
@@ -178,6 +179,8 @@ else {
   move_uploaded_file($_FILES["img"]["tmp_name"], $directorio_destino . $nuevonombreimagen);
 }
 */
+
+
 /* Configuración para el envio del Correo */
 
 //Correo a donde caeran los mensajes del formulario
@@ -187,7 +190,7 @@ $correo = "info@novaterrapc.com.mx";
 $e_asunto= 'Mensaje de Contacto';
 
 //$archivo = 'https://tudominio.com/uploads/'.$nuevonombreimagen;
-//$archivo = 'uploads/'.$nuevonombreimagen;
+$archivo = 'uploads/'.$nuevonombreimagen;
 
 // Preparamos el encabezado del correo 
 $e_bodyas = utf8_decode("Asunto: $asunto") . PHP_EOL;
@@ -204,6 +207,11 @@ if($asunto == 'cotizacion'){
   $e_bodygiro = utf8_decode("Giro: $giro") . PHP_EOL;
 
   $msg = wordwrap($e_bodyas . $e_bodya . $e_bodyg . $e_bodyd . $e_bodynorma . $e_bodygiro . $e_bodye . $e_bodyf . $e_bodyc . $e_reply, 26 );
+}
+elseif ($asunto == 'Vigencia') {
+  $e_bodynorma = utf8_decode("Norma: $norma") . PHP_EOL;
+  $e_bodynamecert = utf8_decode("<b>Nombre certificado:</b> $namecert") . PHP_EOL;
+  $msg = wordwrap($e_bodyas . $e_bodya . $e_bodyg . $e_bodyd . $e_bodynorma . $e_bodynamecert . $e_bodygiro . $e_bodye . $e_bodyf . $e_bodyc . $e_reply, 26 );
 }
 else {
   $msg = wordwrap($e_bodyas . $e_bodya . $e_bodyg . $e_bodyd . $e_bodye . $e_bodyf . $e_bodyc . $e_reply, 26 );

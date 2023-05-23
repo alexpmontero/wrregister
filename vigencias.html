@@ -174,8 +174,8 @@
               <input
                 type="text"
                 class="form-control"
-                id="name"
-                name="name"
+                id="namecert"
+                name="namecert"
                 aria-describedby="nameHelp"
               />
             </div>
@@ -186,8 +186,8 @@
               <input
                 type="text"
                 class="form-control"
-                id="apellidos"
-                name="apellidos"
+                id="certificacion"
+                name="certificacion"
                 aria-describedby="apellidoslHelp"
               />
             </div>
@@ -198,16 +198,16 @@
               <input
                 type="text"
                 class="form-control"
-                id="apellidos"
-                name="apellidos"
-                aria-describedby="apellidoslHelp"
+                id="norma"
+                name="norma"
+                aria-describedby="normalHelp"
               />
             </div>
             <div class="mb-4 col-md-6">
               <label for="formFile" class="form-label"
                 >Adjunto</label
               >
-              <input class="form-control" type="file" id="formFile" />
+              <input class="form-control" type="file" id="img_cert" name="img_cert"/>
             </div>
             <div class="mb-4 mt-4 col-md-12">
               <label for="exampleFormControlTextarea1" class="form-label"
@@ -219,6 +219,21 @@
                 name="mensaje"
                 rows="2"
               ></textarea>
+            </div>
+            <div class="mb-4 col-md-12" hidden>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="Vigencia"
+                  checked
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >Cotización</label
+                >
+              </div>
             </div>
 
             <!-- Mensajes de Validación -->
@@ -260,6 +275,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/app.js"></script>
     <script src="./js/main.js"></script>
     <script>
       $(document).ready(function () {
