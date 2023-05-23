@@ -30,8 +30,8 @@ $(function(){
         // En el archivo enviarcorreo.php devuelvo el valor '1' el cual es procesado con jQuery Ajax 
         // y significa que el mensaje se envio satisfactoriamente. 
         .done(function (res) {                  
-
-          if(res.a == "1"){
+            console.log(res)
+          if(res.a == 1){
             // Mostramos el mensaje 'Tu Mensaje ha sido enviado Correctamente !' 
             $(".msg").html(res.b);                   
             $("#formulario_contacto").trigger("reset");    

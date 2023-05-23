@@ -14,9 +14,12 @@
   $organizacion = $_POST['organizacion'];
   $telefono = $_POST['telefono'];
   $email = $_POST['email'];
-  $asunto = $_POST['asunto'];
+  $asunto = $_POST['inlineRadioOptions'];
+  $puesto = $_POST['puesto'];
   //$img = $_FILES['img'];
   $mensaje = $_POST['mensaje'];
+  $norma = $_POST['norma'];
+  $giro = $_POST['giro'];
 
 
   if(trim($nya) == '') {
@@ -187,15 +190,24 @@ $e_asunto= 'Mensaje de Contacto';
 //$archivo = 'uploads/'.$nuevonombreimagen;
 
 // Preparamos el encabezado del correo 
-$e_bodya = "<p><b>Nombre:</b> $nya" . PHP_EOL . PHP_EOL . "</p>";
-$e_bodyg = "<p><b>Apellidos:</b> $apellidos" . PHP_EOL . PHP_EOL . "</p>";
-$e_bodyd = "<p><b>Organización:</b> $organizacion" . PHP_EOL . PHP_EOL . "</p>";
-$e_bodye = "<p><b>Teléfono:</b> $telefono" . PHP_EOL . PHP_EOL . "</p>";
-$e_bodyf = "<p><b>Asunto:</b> $asunto" . PHP_EOL . PHP_EOL . "</p>";
-$e_reply = "<p><b>Email:</b> $email" . PHP_EOL . PHP_EOL . "</p>";
-$e_bodyc = "<p><b>Mensaje:</b> $mensaje" . PHP_EOL . PHP_EOL . "</p>";
+$e_bodyas = utf8_decode("Asunto: $asunto") . PHP_EOL;
+$e_bodya = utf8_decode("Nombre: $nya") . PHP_EOL;
+$e_bodyg = utf8_decode("Apellidos: $apellidos") . PHP_EOL;
+$e_bodyd = utf8_decode("Organización: $organizacion") . PHP_EOL;
+$e_bodye = utf8_decode("Teléfono: $telefono") . PHP_EOL;
+$e_bodyf = utf8_decode("Puesto: $puesto") . PHP_EOL;
+$e_reply = "Email: $email" . PHP_EOL;
+$e_bodyc = utf8_decode("Mensaje: $mensaje") . PHP_EOL;
 
-$msg = wordwrap( $e_bodya . $e_bodyg . $e_bodyd . $e_bodye . $e_bodyf . $e_bodyc . $e_reply, 26 );
+if($asunto == 'cotizacion'){
+  $e_bodynorma = utf8_decode("Norma: $norma") . PHP_EOL;
+  $e_bodygiro = utf8_decode("Giro: $giro") . PHP_EOL;
+
+  $msg = wordwrap($e_bodyas . $e_bodya . $e_bodyg . $e_bodyd . $e_bodynorma . $e_bodygiro . $e_bodye . $e_bodyf . $e_bodyc . $e_reply, 26 );
+}
+else {
+  $msg = wordwrap($e_bodyas . $e_bodya . $e_bodyg . $e_bodyd . $e_bodye . $e_bodyf . $e_bodyc . $e_reply, 26 );
+}
 
 // Creamos el encabezado del correo 
 $headers = "From: ".$nya." <".$email.">" . PHP_EOL;
@@ -209,17 +221,17 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
     // Si el correo es enviado correctamente, mostramos un mensaje 
     $a = 1;
-    //$b = "<div class='alert alert-success close'>¡Tu mensaje ha sido enviado correctamente!</div>";
-    $b = '<div class="alert alert-success alert-dismissable">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>¡Tu mensaje ha sido enviado correctamente!</div>';
+    $b = '<div class="alert alert-success close">¡Tu mensaje ha sido enviado correctamente!</div>';
+    // $b = '<div class="alert alert-success alert-dismissable">
+    //<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>¡Tu mensaje ha sido enviado correctamente!</div>';
 
     $dab = array(
       "a" => $a, 
       "b" => $b
     );
 
-    echo (mail($correo, $e_asunto, $msg, $headers));
-    //echo (json_encode($dab));
+    //echo (mail($correo, $e_asunto, $msg, $headers));
+    echo (json_encode($dab));
 
   } else {
     $dab = array(
